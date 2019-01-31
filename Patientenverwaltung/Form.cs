@@ -23,19 +23,39 @@ namespace Patientenverwaltung
             dbCon.DatabaseName = "db_patienverwaltung";
             if (dbCon.IsConnect())
             {
-                //suppose col0 and col1 are defined as VARCHAR in the DB
                 string query = "SELECT * FROM patients";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
-                var reader = cmd.ExecuteReader();
-                while (reader.Read())
+
+                try
                 {
-                    string someStringFromColumnZero = reader.GetString(0);
-                    string someStringFromColumnOne = reader.GetString(1);
-                    string someStringFromColumnTwo = reader.GetString(2);
-                    listBox_sql.Items.Add(someStringFromColumnZero + " | " + someStringFromColumnOne + " | " + someStringFromColumnTwo);
+                    MySqlDataAdapter sda = new MySqlDataAdapter();
+                    sda.SelectCommand = cmd;
+                    DataTable dbdataset = new DataTable();
+                    sda.Fill(dbdataset);
+                    BindingSource bSource = new BindingSource();
+
+                    bSource.DataSource = dbdataset;
+                    dataGridView1.DataSource = bSource;
+                    sda.Update(dbdataset);
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+               
                 dbCon.Close();
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_load_table_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

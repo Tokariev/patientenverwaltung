@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -83,6 +84,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\sheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\keyboard_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\lupe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
