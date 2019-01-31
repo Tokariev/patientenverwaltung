@@ -39,12 +39,16 @@ namespace Patientenverwaltung
             {
                 if (String.IsNullOrEmpty(databaseName))
                     return false;
-                string connstring = string.Format("Server=localhost; database={0}; UID=UserName; password=your password", databaseName);
+                string connstring = string.Format("Server=localhost; database={0}; UID=root; password=", databaseName);
                 connection = new MySqlConnection(connstring);
                 connection.Open();
             }
 
             return true;
+        }
+        public void Close()
+        {
+            connection.Close();
         }
     }
 }
