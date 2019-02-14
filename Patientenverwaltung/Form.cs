@@ -60,7 +60,8 @@ namespace Patientenverwaltung
 
         private void button_new_patient_Click(object sender, EventArgs e)
         {
-
+            New_patient new_patient_form = new New_patient();
+            new_patient_form.Show();
         }
     }
 }

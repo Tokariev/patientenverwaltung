@@ -28,101 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_name = new System.Windows.Forms.TextBox();
+            this.textBox_vorname = new System.Windows.Forms.TextBox();
+            this.textBox_adresse = new System.Windows.Forms.TextBox();
+            this.textBox_versich = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.radioButton_m = new System.Windows.Forms.RadioButton();
+            this.radioButton_w = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker_geburtstag = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_name
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(88, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 26);
-            this.textBox1.TabIndex = 0;
+            this.textBox_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_name.Location = new System.Drawing.Point(88, 28);
+            this.textBox_name.Name = "textBox_name";
+            this.textBox_name.Size = new System.Drawing.Size(249, 26);
+            this.textBox_name.TabIndex = 0;
             // 
-            // textBox2
+            // textBox_vorname
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(88, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 26);
-            this.textBox2.TabIndex = 1;
+            this.textBox_vorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_vorname.Location = new System.Drawing.Point(88, 60);
+            this.textBox_vorname.Name = "textBox_vorname";
+            this.textBox_vorname.Size = new System.Drawing.Size(249, 26);
+            this.textBox_vorname.TabIndex = 1;
             // 
-            // textBox3
+            // textBox_adresse
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(88, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(249, 26);
-            this.textBox3.TabIndex = 2;
+            this.textBox_adresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_adresse.Location = new System.Drawing.Point(88, 92);
+            this.textBox_adresse.Name = "textBox_adresse";
+            this.textBox_adresse.Size = new System.Drawing.Size(249, 26);
+            this.textBox_adresse.TabIndex = 2;
             // 
-            // textBox4
+            // textBox_versich
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(88, 124);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(249, 26);
-            this.textBox4.TabIndex = 3;
+            this.textBox_versich.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_versich.Location = new System.Drawing.Point(88, 124);
+            this.textBox_versich.Name = "textBox_versich";
+            this.textBox_versich.Size = new System.Drawing.Size(249, 26);
+            this.textBox_versich.TabIndex = 3;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton_w);
+            this.groupBox1.Controls.Add(this.radioButton_m);
             this.groupBox1.Location = new System.Drawing.Point(88, 157);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(249, 60);
+            this.groupBox1.Size = new System.Drawing.Size(249, 50);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Geschlecht";
             // 
-            // radioButton1
+            // radioButton_m
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(33, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "m";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton_m.AutoSize = true;
+            this.radioButton_m.Location = new System.Drawing.Point(6, 19);
+            this.radioButton_m.Name = "radioButton_m";
+            this.radioButton_m.Size = new System.Drawing.Size(33, 17);
+            this.radioButton_m.TabIndex = 0;
+            this.radioButton_m.TabStop = true;
+            this.radioButton_m.Text = "m";
+            this.radioButton_m.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_w
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(65, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(33, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "w";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_w.AutoSize = true;
+            this.radioButton_w.Location = new System.Drawing.Point(65, 19);
+            this.radioButton_w.Name = "radioButton_w";
+            this.radioButton_w.Size = new System.Drawing.Size(33, 17);
+            this.radioButton_w.TabIndex = 1;
+            this.radioButton_w.TabStop = true;
+            this.radioButton_w.Text = "w";
+            this.radioButton_w.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dateTimePicker_geburtstag
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(88, 224);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePicker_geburtstag.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_geburtstag.Location = new System.Drawing.Point(88, 224);
+            this.dateTimePicker_geburtstag.Name = "dateTimePicker_geburtstag";
+            this.dateTimePicker_geburtstag.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_geburtstag.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(224, 298);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 38);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Hinzufügen";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // New_patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 348);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dateTimePicker_geburtstag);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_versich);
+            this.Controls.Add(this.textBox_adresse);
+            this.Controls.Add(this.textBox_vorname);
+            this.Controls.Add(this.textBox_name);
             this.Name = "New_patient";
             this.Text = "New_patient";
             this.groupBox1.ResumeLayout(false);
@@ -134,13 +147,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_name;
+        private System.Windows.Forms.TextBox textBox_vorname;
+        private System.Windows.Forms.TextBox textBox_adresse;
+        private System.Windows.Forms.TextBox textBox_versich;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.RadioButton radioButton_w;
+        private System.Windows.Forms.RadioButton radioButton_m;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_geburtstag;
+        private System.Windows.Forms.Button button1;
     }
 }
