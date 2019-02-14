@@ -23,7 +23,7 @@ namespace Patientenverwaltung
             dbCon.DatabaseName = "db_patienverwaltung";
             if (dbCon.IsConnect())
             {
-                string query = string.Format("SELECT * FROM patients WHERE name LIKE '%{0}%' OR vorname LIKE '%{0}%'", textBox1.Text);
+                string query = string.Format("SELECT * FROM patient WHERE name LIKE '%{0}%' OR vorname LIKE '%{0}%'", textBox1.Text);
                 var cmd = new MySqlCommand(query, dbCon.Connection);
 
                 try
