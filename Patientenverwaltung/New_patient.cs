@@ -37,12 +37,13 @@ namespace Patientenverwaltung
             {
                 try
                 {
-                    string query = string.Format("INSERT INTO patient ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}' ) VALUE '",
-                        textBox_name.Text, textBox_vorname.Text, textBox_adresse.Text, textBox_versich.Text, geschlecht, dateTimePicker_geburtstag.Value.Date);
+                    string query = string.Format("INSERT INTO patient (name, vorname, adresse, versicherungsnummer, geschlecht, geburtstag) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}' )", 
+                        textBox_name.Text, textBox_vorname.Text, textBox_adresse.Text, Convert.ToInt32(textBox_versich.Text), geschlecht, dateTimePicker_geburtstag.Value.ToString("yyyy-MM-dd"));
                     var cmd = new MySqlCommand(query, dbCon.Connection);
+                    cmd.ExecuteNonQuery();
 
-                    MySqlDataAdapter sda = new MySqlDataAdapter();
-                    sda.SelectCommand = cmd;
+                    MessageBox.Show("Patient " + textBox_name.Text + " " + textBox_vorname.Text  +  " war erfolgreich angelegt");
+                    this.Close();
                 }
                 catch (Exception ex)
                 {

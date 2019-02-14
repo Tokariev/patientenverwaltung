@@ -47,6 +47,7 @@
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(249, 26);
             this.textBox_name.TabIndex = 0;
+            this.textBox_name.Text = "Aaaaaa";
             // 
             // textBox_vorname
             // 
@@ -55,6 +56,7 @@
             this.textBox_vorname.Name = "textBox_vorname";
             this.textBox_vorname.Size = new System.Drawing.Size(249, 26);
             this.textBox_vorname.TabIndex = 1;
+            this.textBox_vorname.Text = "Bbbbb";
             // 
             // textBox_adresse
             // 
@@ -63,6 +65,7 @@
             this.textBox_adresse.Name = "textBox_adresse";
             this.textBox_adresse.Size = new System.Drawing.Size(249, 26);
             this.textBox_adresse.TabIndex = 2;
+            this.textBox_adresse.Text = "Adresse";
             // 
             // textBox_versich
             // 
@@ -71,6 +74,7 @@
             this.textBox_versich.Name = "textBox_versich";
             this.textBox_versich.Size = new System.Drawing.Size(249, 26);
             this.textBox_versich.TabIndex = 3;
+            this.textBox_versich.Text = "55555";
             // 
             // groupBox1
             // 
@@ -86,6 +90,7 @@
             // radioButton_m
             // 
             this.radioButton_m.AutoSize = true;
+            this.radioButton_m.Checked = true;
             this.radioButton_m.Location = new System.Drawing.Point(6, 19);
             this.radioButton_m.Name = "radioButton_m";
             this.radioButton_m.Size = new System.Drawing.Size(33, 17);
