@@ -36,7 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button_new_patient = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -92,7 +92,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(719, 0);
+            this.panel1.Location = new System.Drawing.Point(862, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 680);
             this.panel1.TabIndex = 12;
@@ -109,7 +109,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 508);
+            this.dataGridView1.Size = new System.Drawing.Size(818, 508);
             this.dataGridView1.TabIndex = 14;
             // 
             // button1
@@ -121,14 +121,15 @@
             this.button1.TabIndex = 15;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // button_new_patient
             // 
-            this.button6.Image = global::Patientenverwaltung.Properties.Resources.sheet1;
-            this.button6.Location = new System.Drawing.Point(278, 25);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(60, 60);
-            this.button6.TabIndex = 13;
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_new_patient.Image = global::Patientenverwaltung.Properties.Resources.sheet1;
+            this.button_new_patient.Location = new System.Drawing.Point(278, 25);
+            this.button_new_patient.Name = "button_new_patient";
+            this.button_new_patient.Size = new System.Drawing.Size(60, 60);
+            this.button_new_patient.TabIndex = 13;
+            this.button_new_patient.UseVisualStyleBackColor = true;
+            this.button_new_patient.Click += new System.EventHandler(this.button_new_patient_Click);
             // 
             // button5
             // 
@@ -170,10 +171,10 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(939, 680);
+            this.ClientSize = new System.Drawing.Size(1082, 680);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button_new_patient);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -206,7 +207,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button_new_patient;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
     }

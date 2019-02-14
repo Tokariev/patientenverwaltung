@@ -57,5 +57,10 @@ namespace Patientenverwaltung
         {
 
         }
+
+        private void button_new_patient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
