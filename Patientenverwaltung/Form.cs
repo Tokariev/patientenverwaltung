@@ -23,7 +23,7 @@ namespace Patientenverwaltung
             dbCon.DatabaseName = "db_patienverwaltung";
             if (dbCon.IsConnect())
             {
-                string query = string.Format("SELECT * FROM patients WHERE name LIKE '%{0}%' OR vorname LIKE '%{0}%'", textBox1.Text);
+                string query = string.Format("SELECT * FROM patient WHERE name LIKE '%{0}%' OR vorname LIKE '%{0}%'", textBox1.Text);
                 var cmd = new MySqlCommand(query, dbCon.Connection);
 
                 try
@@ -58,29 +58,10 @@ namespace Patientenverwaltung
 
         }
 
-        private void add_patient_Click(object sender, EventArgs e)
+        private void button_new_patient_Click(object sender, EventArgs e)
         {
-            New_patient add_form = new New_patient();
-            add_form.Show();
-        }
-
-        private void dataGridView1_DoubleClick(object sender, EventHandler ev, DataGridViewCellEventArgs e)
-        {
-            if (dataGridView1.Rows[e.ColumnIndex] != null)
-            {
-                MessageBox.Show(dataGridView1.Rows[e.ColumnIndex].ToString());
-            }
-        }
-
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            New_patient add_form = new New_patient();
-            add_form.Show();
-
-            //Set Patient ID to New_form 
-            add_form.Label_id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            add_form.setVisible();
+            New_patient new_patient_form = new New_patient();
+            new_patient_form.Show();
         }
     }
 }
