@@ -103,6 +103,16 @@ namespace Patientenverwaltung.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap face {
+            get {
+                object obj = ResourceManager.GetObject("face", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap keyboard_delete {
             get {
                 object obj = ResourceManager.GetObject("keyboard_delete", resourceCulture);

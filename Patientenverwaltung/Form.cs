@@ -57,5 +57,30 @@ namespace Patientenverwaltung
         {
 
         }
+
+        private void add_patient_Click(object sender, EventArgs e)
+        {
+            New_patient add_form = new New_patient();
+            add_form.Show();
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventHandler ev, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Rows[e.ColumnIndex] != null)
+            {
+                MessageBox.Show(dataGridView1.Rows[e.ColumnIndex].ToString());
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            New_patient add_form = new New_patient();
+            add_form.Show();
+
+            //Set Patient ID to New_form 
+            add_form.Label_id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            add_form.setVisible();
+        }
     }
 }
